@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LookCash - Crear cuenta</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login-page">
+
+    <main>
+
+        <!-- LOGO -->
+        <img src="assets/img/logosena.jpg" alt="Logo de LookCash" class="logo">
+
+        <!-- TÍTULO -->
+        <h1>LookCash</h1>
+
+        <p>Crea tu cuenta gratis</p>
+
+        <!-- FORMULARIO -->
+        <form id="formRegistro">
+
+            <!-- NOMBRE -->
+            <label for="nombre">Nombre completo</label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresa tu nombre completo"
+                required
+            >
+
+            <!-- CORREO -->
+            <label for="correo">Correo electrónico</label>
+
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Ingresa tu correo electrónico"
+                required
+            >
+
+            <!-- CONTRASEÑA -->
+            <label for="contrasena">Contraseña</label>
+
+            <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Crea una contraseña"
+                minlength="8"
+                required
+            >
+
+            <!-- CONFIRMAR CONTRASEÑA -->
+            <label for="confirmar_contrasena">Confirmar contraseña</label>
+
+            <input
+                type="password"
+                id="confirmar_contrasena"
+                name="confirmar_contrasena"
+                placeholder="Repite tu contraseña"
+                minlength="8"
+                required
+            >
+
+            <!-- TÉRMINOS Y TRATAMIENTO DE DATOS -->
+            <label class="recordar">
+                <input
+                    type="checkbox"
+                    id="terminos"
+                    name="terminos"
+                    required
+                >
+
+                <span>Acepto el tratamiento de mis datos (Ley 1581 de 2012) y los términos de uso</span>
+            </label>
+
+            <!-- BOTÓN CREAR CUENTA -->
+            <button type="submit">
+                Crear cuenta
+            </button>
+
+        </form>
+
+        <!-- SEPARADOR -->
+        <hr>
+
+        <!-- GOOGLE -->
+        <button type="button" class="google">
+            Registrarme con Google
+        </button>
+
+        <!-- LOGIN -->
+        <p class="registro">
+            ¿Ya tienes una cuenta?
+            <a href="login.html">Iniciar sesión</a>
+        </p>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="auth.js"></script>
+    <script src="progra.js"></script>
+
+</body>
+
+</html>

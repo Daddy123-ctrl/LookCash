@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LookCash — Educación financiera con IA</title>
+<meta name="description" content="LookCash es un asistente de inteligencia artificial que te enseña a manejar tu plata: presupuestos, metas de ahorro y hábitos financieros, con gamificación.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#main" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+        <img src="assets/img/logo 1.png" alt="">
+    </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+
+    <div class="header-cta" id="headerCta">
+      <a href="login.html" class="btn btn-ghost">Iniciar sesión</a>
+      <a href="login.html" class="btn btn-primary">Prueba gratis</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#faq">Preguntas</a>
+    <a href="login.html" class="btn btn-primary" style="margin-top:8px;">Prueba gratis</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Educación financiera con IA</p>
+        <h1>Finanzas inteligentes, decisiones inteligentes.</h1>
+        <p class="hero-sub">LookCash es tu asistente de inteligencia artificial para presupuestar, ahorrar y entender tus finanzas, con retos y niveles que hacen que el hábito se quede.</p>
+        <div class="hero-actions">
+          <a href="login.html" class="btn btn-primary btn-lg">Comenzar</a>
+          <a href="#como-funciona" class="btn btn-outline btn-lg">Ver cómo funciona</a>
+        </div>
+        <ul class="hero-tags">
+          <li><a href="#funciones">Presupuestos</a></li>
+          <li><a href="#funciones">Metas de ahorro</a></li>
+          <li><a href="#funciones">Gamificación</a></li>
+          <li><a href="#funciones">Datos protegidos</a></li>
+        </ul>
+      </div>
+      <div class="hero-visual">
+        <div class="device-frame">
+          <div class="device-notch"></div>
+          <div class="device-screen">
+            <video class="device-media" autoplay muted loop playsinline>
+              <source src="assets/img/SnaCash.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CÓMO FUNCIONA ============ -->
+  <section class="section" id="como-funciona">
+    <p class="section-eyebrow">Cómo funciona</p>
+    <h2 class="section-title">Cuatro pasos y ya estás manejando tu plata mejor</h2>
+
+    <div class="steps-grid">
+      <article class="step-card">
+        <div class="step-icon" data-icon="registro"></div>
+        <h3>Registra en segundos</h3>
+        <p>Cuéntale a LookCash lo que gastaste, por chat o por voz, y él lo clasifica solo en categorías como comida, transporte o estudio.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-icon" data-icon="chat"></div>
+        <h3>Pregúntale lo que sea</h3>
+        <p>Resuelve dudas de finanzas personales en lenguaje sencillo: cómo armar un presupuesto, qué es el interés compuesto o cómo salir de una deuda.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-icon" data-icon="meta"></div>
+        <h3>Define metas reales</h3>
+        <p>Desde un portátil hasta el primer arriendo: LookCash calcula cuánto ahorrar cada semana y te avisa si te estás quedando atrás.</p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-icon" data-icon="nivel"></div>
+        <h3>Sube de nivel</h3>
+        <p>Gana puntos y racha por cada buen hábito financiero. Compite contigo mismo mes a mes y desbloquea insignias.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FUNCIONES ============ -->
+  <section class="section section-tinted" id="funciones">
+    <p class="section-eyebrow">Funciones</p>
+    <h2 class="section-title">Todo lo que necesitas para ordenar tus finanzas</h2>
+
+    <div class="features-grid">
+      <article class="feature-card feature-card--wide">
+        <div class="feature-icon" data-icon="chat"></div>
+        <h3>Chatbot con IA</h3>
+        <p>Un asistente conversacional entrenado en educación financiera que responde tus preguntas del día a día, sin tecnicismos ni letra pequeña.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" data-icon="presupuesto"></div>
+        <h3>Presupuesto automático</h3>
+        <p>Organiza tus ingresos y gastos por categorías y visualiza en qué se te está yendo la plata.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" data-icon="meta"></div>
+        <h3>Metas de ahorro</h3>
+        <p>Crea metas con fecha límite y deja que LookCash te diga cuánto apartar cada semana.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" data-icon="notificacion"></div>
+        <h3>Notificaciones a tiempo</h3>
+        <p>Recordatorios antes de que se venza un pago o cuando estás cerca de salirte del presupuesto.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" data-icon="nivel"></div>
+        <h3>Gamificación</h3>
+        <p>Puntos, rachas y niveles que convierten el ahorro en un hábito que sí se sostiene.</p>
+      </article>
+
+      <article class="feature-card feature-card--wide">
+        <div class="feature-icon" data-icon="candado"></div>
+        <h3>Tus datos, protegidos</h3>
+        <p>Manejamos tu información financiera bajo los principios de la Ley 1581 de 2012: tú decides qué compartes y puedes borrar tus datos cuando quieras.</p>
+      </article>
+    </div>
+  </section>
+
+  
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="section cta-band">
+    <div class="cta-band-inner">
+      <h2>Dale el primer paso a tus finanzas hoy</h2>
+      <p>Sin tarjeta de crédito. Cancela cuando quieras.</p>
+      <a href="login.html" class="btn btn-primary btn-lg">Comenzar gratis</a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <p class="section-eyebrow">Preguntas frecuentes</p>
+    <h2 class="section-title">Resolvemos tus dudas</h2>
+
+    <div class="accordion">
+      <div class="accordion-item is-open">
+        <button class="accordion-trigger" aria-expanded="true">
+          <span>¿LookCash reemplaza a un asesor financiero?</span>
+          <span class="accordion-icon"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>No. LookCash te enseña hábitos y conceptos de finanzas personales de forma sencilla, pero no da asesoría de inversión ni reemplaza a un profesional certificado para decisiones grandes.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>¿Qué pasa con mis datos financieros?</span>
+          <span class="accordion-icon"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Tus datos se tratan conforme a la Ley 1581 de 2012 de protección de datos personales en Colombia. Tú autorizas su uso al registrarte y puedes solicitar su eliminación en cualquier momento.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>¿Puedo usar LookCash sin pagar?</span>
+          <span class="accordion-icon"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Sí, el plan Básico es gratis y te deja registrar gastos y mantener una meta de ahorro activa. Los planes pagos suman metas ilimitadas, reportes y una IA más completa.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>¿Cómo funciona la gamificación?</span>
+          <span class="accordion-icon"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>Cada buen hábito —registrar un gasto, cumplir tu meta semanal, no salirte del presupuesto— suma puntos. Con constancia subes de nivel y desbloqueas insignias.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+          <span>¿En qué dispositivos puedo usarlo?</span>
+          <span class="accordion-icon"></span>
+        </button>
+        <div class="accordion-panel">
+          <p>LookCash funciona desde el navegador, en computador o celular, sin necesidad de instalar nada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">
+       <span class="logo-mark" aria-hidden="true">
+        <img src="assets/img/logo 1.png" alt="">
+       </span>
+      </span>
+      <p>Educación financiera con inteligencia artificial, hecha en el SENA.</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Producto</h4>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#planes">Planes</a>
+      </div>
+      <div>
+        <h4>Compañía</h4>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="#">Sobre LookCash</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Tratamiento de datos (Ley 1581 de 2012)</a>
+        <a href="#">Términos de uso</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 LookCash — Proyecto de emprendimiento SENA, programa ADSO.</p>
+  </div>
+</footer>
+
+<script src="auth.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

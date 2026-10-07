@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LookCash - Iniciar sesión</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login-page">
+
+    <main>
+
+        <!-- LOGO -->
+        <img src="assets/img/Lookcash.jpg" alt="Logo de LookCash" class="logo">
+
+        <!-- TÍTULO -->
+        <h1>LookCash</h1>
+
+        <p>Inicia sesión en tu cuenta</p>
+
+        <!-- FORMULARIO -->
+        <form>
+
+            <!-- CORREO -->
+            <label for="correo">Correo electrónico</label>
+
+            <input 
+                type="email" 
+                id="correo" 
+                name="correo"
+                placeholder="Ingresa tu correo electrónico"
+                required
+            >
+
+            <!-- CONTRASEÑA -->
+            <label for="contrasena">Contraseña</label>
+
+            <input 
+                type="password" 
+                id="contrasena" 
+                name="contrasena"
+                placeholder="Ingresa tu contraseña"
+                required
+            >
+
+            <!-- RECORDAR SESIÓN -->
+            <label class="recordar">
+                <input 
+                    type="checkbox" 
+                    id="recordar" 
+                    name="recordar"
+                >
+
+                <span>Recordar mi sesión</span>
+            </label>
+
+            <!-- OLVIDASTE CONTRASEÑA -->
+            <a href="#" class="olvidaste">
+                ¿Olvidaste tu contraseña?
+            </a>
+
+            <!-- BOTÓN INICIAR SESIÓN -->
+            <button type="submit">
+                Iniciar sesión
+            </button>
+
+        </form>
+
+        <!-- SEPARADOR -->
+        <hr>
+
+        <!-- GOOGLE -->
+        <button type="button" class="google">
+            Iniciar sesión con Google
+        </button>
+
+        <!-- REGISTRO -->
+        <p class="registro">
+            ¿No tienes una cuenta?
+            <a href="registro.html">Registrarse</a>
+        </p>
+
+        <!-- ACCESO ADMINISTRADOR -->
+        <p class="admin-link">
+            ¿Eres administrador? <a href="admin.html">Entrar al panel de administración</a>
+        </p>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="auth.js"></script>
+    <script src="progra.js"></script>
+
+</body>
+
+</html>

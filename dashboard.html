@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LookCash — Mi cuenta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+
+  <!-- ============ TOPBAR ============ -->
+  <header class="dash-topbar">
+    <div class="dash-topbar-inner">
+      <a href="dashboard.html" class="logo">
+        <span class="logo-mark"><img src="assets/img/logo 1.png" alt=""></span>
+        <span class="dash-brand-name">LookCash</span>
+      </a>
+
+      <nav class="dash-nav" aria-label="Navegación de la app">
+        <a href="#modulos">Módulos</a>
+        <a href="#cursos">Cursos</a>
+      </nav>
+
+      <div class="dash-user">
+        <span class="dash-level-pill" id="dashNivelPill">Nivel 1</span>
+        <div class="dash-user-info">
+          <strong id="dashNombre">Usuario</strong>
+          <a href="#" id="dashCerrarSesion">Cerrar sesión</a>
+        </div>
+        <div class="avatar" id="dashAvatar">U</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dash-main">
+
+    <!-- ============ HERO / BIENVENIDA ============ -->
+    <section class="dash-hero">
+      <div class="dash-hero-copy">
+        <p class="dash-hero-eyebrow">Bienvenido de nuevo</p>
+        <h1 id="dashSaludo">¡Hola!</h1>
+        <p class="dash-hero-frase" id="dashFrase">Cargando tu frase del día...</p>
+      </div>
+
+      <div class="dash-hero-stats">
+        <div class="dash-stat">
+          <span class="dash-stat-value" id="dashStatNivel">1</span>
+          <span class="dash-stat-label">Nivel</span>
+        </div>
+        <div class="dash-stat">
+          <span class="dash-stat-value" id="dashStatRacha">0</span>
+          <span class="dash-stat-label">Días de racha</span>
+        </div>
+        <div class="dash-stat">
+          <span class="dash-stat-value" id="dashStatPuntos">0</span>
+          <span class="dash-stat-label">Puntos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÓDULOS ============ -->
+    <section class="dash-section" id="modulos">
+      <div class="dash-section-head">
+        <h2>Tus módulos</h2>
+        <p>Todo lo que necesitas para manejar tu plata, en un solo lugar.</p>
+      </div>
+
+      <div class="dash-modules-grid">
+
+        <button class="module-card" type="button" data-modulo="Presupuesto">
+          <span class="feature-icon" data-icon="presupuesto"></span>
+          <h3>Presupuesto</h3>
+          <p>Organiza tus ingresos y gastos por categoría.</p>
+        </button>
+
+        <button class="module-card" type="button" data-modulo="Metas de ahorro">
+          <span class="feature-icon" data-icon="meta"></span>
+          <h3>Metas de ahorro</h3>
+          <p>Define una meta y te decimos cuánto ahorrar cada semana.</p>
+        </button>
+
+        <button class="module-card" type="button" data-modulo="Retos y niveles">
+          <span class="feature-icon" data-icon="nivel"></span>
+          <h3>Retos y niveles</h3>
+          <p>Gana puntos e insignias por tus buenos hábitos financieros.</p>
+        </button>
+
+        <button class="module-card" type="button" data-modulo="Notificaciones">
+          <span class="feature-icon" data-icon="notificacion"></span>
+          <h3>Notificaciones</h3>
+          <p>Recordatorios antes de que se venza un pago importante.</p>
+        </button>
+
+        <button class="module-card" type="button" id="abrirLukasDesdeModulo">
+          <span class="feature-icon" data-icon="chat"></span>
+          <h3>Pregúntale a Lukas</h3>
+          <p>Resuelve tus dudas de finanzas personales al instante.</p>
+        </button>
+
+        <button class="module-card" type="button" data-modulo="Tus datos protegidos">
+          <span class="feature-icon" data-icon="candado"></span>
+          <h3>Tus datos protegidos</h3>
+          <p>Bajo los principios de la Ley 1581 de 2012.</p>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ============ CURSOS / INSTRUCTORES ============ -->
+    <section class="dash-section dash-section-tinted" id="cursos">
+      <div class="dash-section-head">
+        <h2>Cursos y presentaciones de instructores</h2>
+        <p>Videos cortos para conocer a quién te va a enseñar y de qué trata cada curso.</p>
+      </div>
+
+      <div class="courses-grid" id="coursesGrid">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ LUKAS — CHATBOT FLOTANTE ============ -->
+  <div class="lukas-widget">
+
+    <button class="lukas-fab" id="lukasFab" aria-label="Abrir chat con Lukas" aria-expanded="false">
+      <svg viewBox="0 0 64 64" class="lukas-fab-svg" aria-hidden="true">
+        <circle cx="32" cy="14" r="3" fill="#fff"/>
+        <line x1="32" y1="17" x2="32" y2="22" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="12" y="22" width="40" height="32" rx="14" fill="#fff"/>
+        <circle cx="24" cy="38" r="4.2" fill="#226300"/>
+        <circle cx="40" cy="38" r="4.2" fill="#226300"/>
+        <path d="M24 46c2.5 2.6 13.5 2.6 16 0" stroke="#226300" stroke-width="3" stroke-linecap="round" fill="none"/>
+      </svg>
+    </button>
+
+    <div class="lukas-panel" id="lukasPanel" hidden>
+
+      <div class="lukas-panel-head">
+        <div class="lukas-avatar" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <rect x="12" y="22" width="40" height="32" rx="14" fill="#fff"/>
+            <circle cx="24" cy="38" r="4.2" fill="#226300"/>
+            <circle cx="40" cy="38" r="4.2" fill="#226300"/>
+            <path d="M24 46c2.5 2.6 13.5 2.6 16 0" stroke="#226300" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="lukas-panel-title">
+          <strong>Lukas</strong>
+          <span>Tu asistente financiero</span>
+        </div>
+        <button class="lukas-close" id="lukasClose" aria-label="Cerrar chat">✕</button>
+      </div>
+
+      <div class="lukas-messages" id="lukasMessages" aria-live="polite"></div>
+
+      <form class="lukas-input-row" id="lukasForm">
+        <input type="text" id="lukasInput" placeholder="Escríbele a Lukas..." autocomplete="off">
+        <button type="submit" aria-label="Enviar mensaje">➤</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="lukas.js"></script>
+</body>
+</html>

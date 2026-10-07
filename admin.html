@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LookCash — Panel de administración</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-page">
+
+<div class="admin-shell" id="adminShell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="admin-sidebar on-dark" id="adminSidebar">
+    <div class="admin-brand">
+      <span class="logo-mark"><img src="assets/img/logo1.png" alt=""></span>
+      <span>
+        <span class="name">LookCash</span>
+        <span class="tag">Panel administrador</span>
+      </span>
+    </div>
+
+    <nav class="admin-nav" aria-label="Navegación del panel">
+      <a href="#" class="is-active" data-section="dashboard"><span class="dot"></span> Dashboard</a>
+      <a href="#" data-section="usuarios"><span class="dot"></span> Usuarios</a>
+      <a href="#" data-section="metas"><span class="dot"></span> Metas de ahorro</a>
+      <a href="#" data-section="retos"><span class="dot"></span> Retos y gamificación</a>
+      <a href="#" data-section="conversaciones"><span class="dot"></span> Conversaciones IA</a>
+      <a href="#" data-section="configuracion"><span class="dot"></span> Configuración</a>
+    </nav>
+
+    <div class="admin-sidebar-foot">
+      <a href="login.html">← Cerrar sesión</a>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <div class="admin-main">
+
+    <header class="admin-topbar">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <button class="admin-menu-toggle" id="adminMenuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+        </button>
+        <div>
+          <h1>Dashboard</h1>
+          <p>Resumen general de la actividad en LookCash</p>
+        </div>
+      </div>
+
+      <div class="admin-user">
+        <div class="who">
+          <strong id="adminName">Administrador</strong>
+          <span>LookCash SAS</span>
+        </div>
+        <div class="avatar" id="adminAvatar">A</div>
+      </div>
+    </header>
+
+    <div class="admin-content">
+
+      <!-- ============ KPIs ============ -->
+      <section class="admin-kpis">
+        <div class="admin-kpi">
+          <div class="label">Usuarios registrados</div>
+          <div class="value" id="kpiUsuarios">0</div>
+          <div class="delta up">Dato real (localStorage)</div>
+        </div>
+        <div class="admin-kpi">
+          <div class="label">Usuarios con cuenta activa</div>
+          <div class="value" id="kpiActivos">0</div>
+          <div class="delta up">Dato real (localStorage)</div>
+        </div>
+        <div class="admin-kpi">
+          <div class="label">Metas de ahorro activas</div>
+          <div class="value" id="kpiMetas">347</div>
+          <div class="delta up">Dato de ejemplo</div>
+        </div>
+        <div class="admin-kpi">
+          <div class="label">Conversaciones con la IA</div>
+          <div class="value" id="kpiConversaciones">5.902</div>
+          <div class="delta down">Dato de ejemplo</div>
+        </div>
+      </section>
+
+      <!-- ============ GRÁFICO + ACTIVIDAD ============ -->
+      <section class="admin-grid">
+        <div class="admin-panel">
+          <h2>Registros nuevos por día</h2>
+          <p class="sub">Últimos 7 días (dato de ejemplo)</p>
+          <div class="admin-bars" id="adminBars"></div>
+        </div>
+
+        <div class="admin-panel">
+          <h2>Actividad reciente</h2>
+          <p class="sub">Eventos del sistema (dato de ejemplo)</p>
+          <ul class="admin-list" id="adminActivity"></ul>
+        </div>
+      </section>
+
+      <!-- ============ TABLA DE USUARIOS ============ -->
+      <section class="admin-table-wrap">
+        <div class="admin-table-head">
+          <h2>Usuarios</h2>
+          <div class="admin-search">
+            <span aria-hidden="true">🔍</span>
+            <input type="text" id="userSearch" placeholder="Buscar por nombre o correo...">
+          </div>
+        </div>
+
+        <div style="overflow-x:auto;">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Usuario</th>
+                <th>Rol</th>
+                <th>Nivel</th>
+                <th>Estado</th>
+                <th>Registro</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="usersTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
